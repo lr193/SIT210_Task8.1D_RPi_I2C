@@ -19,7 +19,7 @@ while True:
     xAccel = ((xdata1 & 0x03) * 256) + xdata0
 
     if xAccel > 511:
-        xAccel -= 2014
+        xAccel -= 1024
 
 
 
@@ -29,7 +29,7 @@ while True:
     yAccel = ((ydata1 & 0x03) * 256) + ydata0
 
     if yAccel > 511:
-        yAccel -= 2014
+        yAccel -= 1024
 
 
 
@@ -39,7 +39,7 @@ while True:
     zAccel = ((zdata1 & 0x03) * 256) + zdata0
 
     if zAccel > 511:
-            zAccel -= 2014
+            zAccel -= 1024
 
     print "Acc X: %d" %xAccel
     print "Acc y: %d" %yAccel
